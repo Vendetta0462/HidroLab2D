@@ -10,5 +10,5 @@ Plateau_Rayleigh
 
 # Results
 results/*.xl
-results/animaciones/*.gif
-results/figuras/*.png
+# results/animaciones/*.gif
+# results/figuras/*.png
