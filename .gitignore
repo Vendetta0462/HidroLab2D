@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.o
+
+# Fortran
+*.mod
+*.o
+Plateau_Rayleigh
+
+# Results
+results/*.xl
+results/animaciones/*.gif
+results/figuras/*.png

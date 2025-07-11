@@ -1,0 +1,73 @@
+&BHtoy_Input
+
+! Driver Paramters
+! *************************
+
+res_num	       = 4
+nvars          = 4
+every_0Dt  	   = 10
+every_1Dt  	   = 10
+
+! Grid Parameters
+! **************************
+
+rmin 		   =  -1.0
+rmax 		   =   1.0
+Nrr 		   =   200
+
+! Evolution Parameters
+! **************************
+
+Ntt 		   = 100
+courant 	   = 0.15
+
+! HydroDynamics
+! **************************
+!gamma = 1.66
+r_0 = 0
+
+! InitialValues (MKS, kg/m³ - m/s - Pa)
+! ***********************
+!rho_0_L = 997.0d0 !Agua 
+!rho_0_R = 1.2d0 !Aire
+rho_0_L = 6.0d0
+rho_0_R = 0.125
+u_0_L   = 0.0d0
+u_0_R   = 0.0d0
+w_0_L	= 0.0d0
+w_0_R	= 0.0d0
+p_0_L 	= 1.3d0
+p_0_R 	= 0.1d0
+!p_0_L   = 102000.0d0
+!p_0_R   = 101325.0d0
+
+
+
+! Boundary Conditions
+!****************************
+! Periodical, Neumann
+
+bconditions = 'Periodical'
+
+! Method of Approximation
+!****************************
+! FD, FV
+
+approx_method = 'FV'
+
+
+
+! Time Integrator
+!****************************
+! Rk2, RK3, Rk4, ICN, RKDP
+
+integrator     = 'RKDP'
+
+! Error control (RKDP)
+! **************************
+! ctrl - 1=yes 0=no
+
+ctrl           = 1
+min_dt		   = 5e-6
+safety		   = 0.9
+/

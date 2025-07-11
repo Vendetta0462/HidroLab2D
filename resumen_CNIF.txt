@@ -1,0 +1,16 @@
+Inestabilidad de Plateau-Rayleigh: Un Laboratorio Virtual para el Estudio de la Dinámica de Fluidos
+
+Brayan Santiago Amorocho Lizcano¹, Nicolas Mantilla Molina¹
+¹Universidad Industrial de Santander - Escuela de Física
+¹brayan.amorocho@correo.uis.edu.co, nicolas.mantilla@correo.uis.edu.co
+
+RESUMEN
+La inestabilidad de Plateau-Rayleigh (IPR) es un fenómeno fundamental en la dinámica de fluidos, crucial para procesos como la atomización y la formación de gotas. Su estudio experimental es desafiante debido a las escalas involucradas y la complejidad de su evolución no lineal. En este trabajo, presentamos un laboratorio virtual diseñado para investigar la IPR mediante simulaciones numéricas. El modelo resuelve las ecuaciones de Euler en dos dimensiones utilizando el método de volúmenes finitos para la discretización espacial, incorporando un solucionador de Riemann (HLL) y un limitador Minmod para capturar discontinuidades y mantener la estabilidad. La integración temporal se realiza con el método de Runge-Kutta Dormand-Prince (RKDP) de orden 5(4) con paso adaptativo, lo que optimiza la eficiencia y precisión de la simulación. Este laboratorio virtual permite la exploración sistemática de la IPR bajo diversas condiciones iniciales y de frontera, ofreciendo un control sin precedentes sobre los parámetros del sistema. Para facilitar esta interacción, hemos desarrollado un prototipo de interfaz gráfica de usuario (GUI) que permite al usuario modificar parámetros de simulación, ejecutar el código y visualizar los resultados de forma interactiva. Se demuestra la capacidad del modelo para simular la fragmentación de columnas líquidas en gotas y se presenta un análisis de convergencia que valida la robustez y precisión del esquema numérico. Los resultados obtenidos resaltan el potencial de los laboratorios virtuales como herramientas poderosas para la investigación en dinámica de fluidos, permitiendo el estudio detallado de fenómenos complejos que son difíciles de observar o controlar experimentalmente.
+
+Palabras clave: Dinámica de Fluidos, Inestabilidad de Plateau-Rayleigh, Volúmenes Finitos, Laboratorio Virtual, Simulación Numérica, Interfaz Gráfica.
+
+RESUMEN GRÁFICO
+La figura muestra una secuencia de fotogramas de la simulación de la inestabilidad de Plateau-Rayleigh, obtenida y visualizada a través de nuestro prototipo de laboratorio virtual con interfaz gráfica. Se observa la evolución de una columna cilíndrica de fluido perturbada, que gradualmente se fragmenta en gotas individuales debido a la acción de la tensión superficial. Esta visualización interactiva es clave para comprender la dinámica no lineal del fenómeno y validar los resultados del modelo computacional.
+
+Agradecimientos
+Los agradecimientos deben aparecer antes de la lista de referencias.
