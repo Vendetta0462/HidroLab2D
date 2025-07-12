@@ -17,7 +17,6 @@ module global_numbers
 
   ! Integrators
   character(len=5) :: integrator
-  character(len=5) :: derivator
   character(len=5) :: approx_method
 
   !Parameters to compute the CPU time

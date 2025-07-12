@@ -16,21 +16,12 @@
 
   character(len=256) :: filename
 
-  integer i,j,l,first_index, auxcounter,after,before
+  integer first_index
 
-  if (res_num.eq.1) then
-    filename = base_name // '_1.xl'
-  else if (res_num.eq.2) then
-    filename = base_name // '_2.xl'
-  else if (res_num.eq.3) then
-    filename = base_name // '_3.xl'
-  else if (res_num.eq.4) then
-    filename = base_name // '_4.xl'
-  else if (res_num.eq.5) then
-    filename = base_name // '_5.xl'
-  end if
+  ! Crear nombre de archivo basado en res_num
+  write(filename, '(A,A,I0,A)') base_name, '_', res_num, '.xl'
 
-  filename = 'results/' // filename
+  filename = 'results/' // trim(filename)
 
   if (first_index.eq.0) then
      filestatus = 'replace'

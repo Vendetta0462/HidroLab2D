@@ -19,7 +19,6 @@
   print *, 'every_1D =',every_1D
   print *, 'Number of time blocks =',Nt/every_1D
   print *, 'integrator = ',integrator
-  print *, 'derivator = ',derivator
   print *, '*****************************************'
   print *, '*****************************************'
 

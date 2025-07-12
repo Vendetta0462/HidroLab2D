@@ -15,7 +15,7 @@ subroutine RKDP
   integer, parameter :: nstages = 7
   
   real(kind=8) :: error_now, tolerance, dt_temp
-  integer :: i,k
+  integer :: k
   real(kind=8), allocatable, dimension(:,:,:) :: u_high, u_low
 
   ! Definamos la tabla de Butcher (en este caso será 4(5))

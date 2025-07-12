@@ -6,10 +6,7 @@ subroutine evolve
 
   implicit none
 
-  integer i,j,k,l
-  integer num_steps
-
-  real(kind=8) dt_advect
+  integer l
 
   call allocate
   call initializing_arrays

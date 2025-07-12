@@ -9,8 +9,6 @@ subroutine rhs
 
   integer i, j, k
 
-  real(kind=8), dimension(1:nvars, 0:Nr) :: du_x, ddu_x
-
   real(kind=8), dimension(1:2) :: rho_L, u_L, w_L, p_L, E_L, a_L
   real(kind=8), dimension(1:2) :: rho_R, u_R, w_R, p_R, E_R, a_R
   real(kind=8) :: a,b,c,d

@@ -5,7 +5,7 @@ program main
 
   implicit none
 
-  integer i,j,k,Nrr,Ntt
+  integer Nrr,Ntt
   integer every_0Dt, every_1Dt
 
   Namelist /BHtoy_Input/ rmin, rmax, & 

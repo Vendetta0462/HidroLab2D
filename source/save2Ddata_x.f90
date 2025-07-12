@@ -15,12 +15,12 @@
     real(kind=8), dimension(0:Nr,0:Nr), intent(IN) :: fval
 
     character(len=256) :: filename
-    integer i,j,l,first_index
+    integer i,j,first_index
 
     ! Crear nombre de archivo basado en res_num
     write(filename, '(A,A,I0,A)') base_name, '_', res_num, '.xl'
 
-    filename = 'results/' // filename
+    filename = 'results/' // trim(filename)
 
     if (first_index.eq.0) then
        filestatus = 'replace'

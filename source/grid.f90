@@ -15,7 +15,7 @@ subroutine grid
            y(i)  = rmin + dble(i) * dr
   end do
 
-  dt_courant = courant * dr
+  dt_courant = 1.0/2.0 * courant * dr**2
   dt = dt_courant
 
 end subroutine grid
