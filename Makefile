@@ -3,7 +3,7 @@ FC=gfortran
 #FC=/opt/intel/bin/ifort
 
 #FFLAGS = -O3 -fopenmp
-FFLAGS = -O3
+FFLAGS = -O3 -J$(COMPILED_DIR)
 
 #LNK = mpif90
 LNK=gfortran
@@ -33,4 +33,4 @@ clean:
 
 $(COMPILED_DIR)/%.o : $(SOURCE_DIR)/%.f90
 	@ mkdir -p $(COMPILED_DIR)
-	$(FC) -c $(FFLAGS) $< -o $@
+	$(FC) -c $(FFLAGS) -I$(COMPILED_DIR) $< -o $@
