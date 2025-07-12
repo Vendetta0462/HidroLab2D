@@ -13,3 +13,6 @@ Plateau_Rayleigh.exe
 results/*.xl
 # results/animaciones/*.gif
 # results/figuras/*.png
+
+# VS Code settings
+.vscode/
