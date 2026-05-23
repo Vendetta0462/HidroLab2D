@@ -3,7 +3,7 @@
 ! Driver Paramters
 ! *************************
 
-res_num	       = 4
+res_num	       = 1
 nvars          = 4
 every_0Dt  	   = 10
 every_1Dt  	   = 10
@@ -51,7 +51,7 @@ bconditions = 'Periodical'
 
 ! Method of Approximation
 !****************************
-! FD, FV
+! FV
 
 approx_method = 'FV'
 

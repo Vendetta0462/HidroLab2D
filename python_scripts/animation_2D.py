@@ -9,6 +9,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 import matplotlib.colors as colors
+from pathlib import Path
+
+# Directorio raíz del proyecto
+BASE_DIR = Path(__file__).parent.parent
 
 def _isfloat(val):
     global count
@@ -91,12 +95,12 @@ if __name__=='__main__':
     mostrar_snapshot = False # Decidir si mostrar snapshot
     snap_idx = 0 # En caso de mostrar snapshot, cual frame
     save_animation = False # Decidir si guardar animación
-    anim_path = f"../results/animaciones/nombre.gif" # Path en caso de guardar animación
+    anim_path = BASE_DIR / 'results' / 'animaciones' / 'nombre.gif' # Path en caso de guardar animación
 
     # ---------------------------
     # Lectura de data_blocks
     # ---------------------------
-    filename = f'../results/{campo}.xl'
+    filename = BASE_DIR / 'results' / f'{campo}.xl'
     print(f"Leyendo archivo: {filename}")
 
     try:
@@ -114,7 +118,7 @@ if __name__=='__main__':
         print(f"Error al leer el archivo: {e}")
         exit(1)
 
-    filename_dt = f'../results/{campo_dt}.xl'
+    filename_dt = BASE_DIR / 'results' / f'{campo_dt}.xl'
     print(f"Leyendo dt en: {filename_dt}")
 
     try:
